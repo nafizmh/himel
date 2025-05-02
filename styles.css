@@ -164,14 +164,23 @@ header p {
   }
 }
 
-.close-modal {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 28px;
-  cursor: pointer;
-  z-index: 10;
-  color: var(--dark-gray);
+.close-modal
+Specificity: (0,1,0)
+ {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 10;
+    color: #eb0014;
+    background: black;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
 }
 
 .close-modal:hover {
