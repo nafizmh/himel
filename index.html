@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Product Showcase</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Modern Collection</h1>
+      <p>Discover our premium selection of products</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="products-grid" id="products-container">
+      <!-- Products will be dynamically inserted here -->
+    </div>
+  </main>
+
+  <div class="product-modal" id="product-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-product">
+        <div class="modal-gallery">
+          <div class="main-image">
+            <img id="current-image" src="/placeholder.svg" alt="Product image">
+          </div>
+          <div class="thumbnail-container" id="thumbnails">
+            <!-- Thumbnails will be inserted here -->
+          </div>
+        </div>
+        <div class="modal-details">
+          <h2 id="modal-title"></h2>
+          <p class="modal-price" id="modal-price"></p>
+          <div class="modal-description" id="modal-description"></div>
+          <div class="modal-specs" id="modal-specs"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
